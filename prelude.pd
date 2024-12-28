@@ -1,0 +1,9 @@
+#N canvas -7 0 958 980 12;
+#X obj 513 282 f 0, f 4;
+#X obj 527 416 + 1;
+#X obj 323 421 print compteur;
+#X obj 515 138 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X connect 0 0 1 0;
+#X connect 0 0 2 0;
+#X connect 1 0 0 1;
+#X connect 3 0 0 0;
