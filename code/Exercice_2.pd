@@ -1,52 +1,53 @@
-#N canvas 0 0 800 600 10;
-
-#X obj 50 50 tgl 15 0 empty empty global_switch;
-#X obj 50 80 tgl 15 0 empty empty trumpet_switch;
-#X obj 50 110 tgl 15 0 empty empty bass_switch;
-#X obj 50 140 tgl 15 0 empty empty drum_switch;
-
-#X obj 150 80 spigot;
-#X obj 150 110 spigot;
-#X obj 150 140 spigot;
-
-#X obj 250 80 metro 100;
-#X obj 250 110 metro 250;
-#X obj 250 140 metro 200;
-
-#X obj 350 80 random 60;    
-#X obj 350 110 random 48;   
-#X obj 350 140 random 10;   
-
-#X obj 450 80 + 60;          
-#X obj 450 110 + 36;       
-#X obj 450 140 + 35;      
-
-#X obj 550 80 noteout;       
-#X obj 550 110 noteout;      
-#X obj 550 140 dac~;         
-
-#X obj 650 140 soundfiler;   
-
-#X connect 0 0 4 0;          
-#X connect 0 0 5 0;          
-#X connect 0 0 6 0;          
-
-#X connect 1 0 4 1;          
-#X connect 2 0 5 1;          
-#X connect 3 0 6 1;          
-
-#X connect 4 0 7 0;          
-#X connect 5 0 8 0;          
-#X connect 6 0 9 0;          
-
-#X connect 7 0 10 0;         
-#X connect 8 0 11 0;         
-#X connect 9 0 12 0;         
-
-#X connect 10 0 13 0;        
-#X connect 11 0 14 0;        
-#X connect 12 0 15 0;        
-
-#X connect 13 0 16 0;        
-#X connect 14 0 17 0;        
-#X connect 15 0 18 0;       
+#N canvas 949 270 800 600 10;
+#X obj 127 264 tgl 15 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 127 314 tgl 15 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 127 364 tgl 15 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 127 414 tgl 15 0 empty empty empty 0 -8 0 10 #fcfcfc #000000 #000000 0 1;
+#X obj 227 314 spigot;
+#X obj 227 364 spigot;
+#X obj 227 414 spigot;
+#X obj 327 314 metro 100;
+#X obj 327 364 metro 250;
+#X obj 327 414 metro 200;
+#X obj 427 314 random 13;
+#X obj 427 364 random 13;
+#X obj 427 414 random 13;
+#X obj 527 314 + 60;
+#X obj 527 364 + 36;
+#X obj 527 414 + 35;
+#X obj 627 314 makenote 100;
+#X obj 627 364 makenote 250;
+#X obj 627 414 makenote 200;
+#X obj 985 127 noteout;
+#X obj 982 161 noteout;
+#X obj 980 223 noteout;
+#X obj 828 125 print trumpet_debug;
+#X obj 818 166 print bass_debug;
+#X obj 812 225 print drum_debug;
+#X connect 0 0 4 0;
+#X connect 0 0 5 0;
+#X connect 0 0 6 0;
+#X connect 1 0 4 1;
+#X connect 2 0 5 1;
+#X connect 3 0 6 1;
+#X connect 4 0 7 0;
+#X connect 5 0 8 0;
+#X connect 6 0 9 0;
+#X connect 7 0 10 0;
+#X connect 8 0 11 0;
+#X connect 9 0 12 0;
+#X connect 10 0 13 0;
+#X connect 11 0 14 0;
+#X connect 12 0 15 0;
+#X connect 13 0 16 0;
+#X connect 14 0 17 0;
+#X connect 15 0 18 0;
+#X connect 16 0 19 0;
+#X connect 16 0 22 0;
+#X connect 16 1 19 1;
+#X connect 17 0 20 0;
+#X connect 17 0 23 0;
+#X connect 17 1 20 1;
+#X connect 18 0 21 0;
+#X connect 18 0 24 0;
+#X connect 18 1 21 1;

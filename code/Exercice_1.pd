@@ -12,9 +12,9 @@
 #X msg 1324 258 74;
 #X msg 1374 258 76;
 #X msg 1424 258 77;
-#X obj 183 860 makenote 120;
-#X obj 333 860 noteout;
-#X obj 183 910 print touche_pressee;
+#X obj 547 684 makenote 120;
+#X obj 551 778 noteout;
+#X obj 18 190 print touche_pressee;
 #X obj 1000 677 print note_midi;
 #X msg 1474 258 79;
 #X msg 1518 258 81;
