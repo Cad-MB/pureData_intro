@@ -1,0 +1,18 @@
+#N canvas 100 100 450 300 10;
+#X obj 50 50 bng;
+#X obj 50 100 metro 500;
+#X obj 50 150 random 13;
+#X obj 50 200 + 48;
+#X obj 150 150 random 1001;
+#X obj 150 200 + 1000;
+#X obj 50 250 makenote;
+#X obj 50 300 noteout;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 1 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 6 1 7 1;
